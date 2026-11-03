@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+
+/* HEADER */
+
+.header {
+    background-image: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    padding: 130px 20px 100px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 45px;
+}
+
+.header h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.header p {
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.ios {
+    background: hsl(171, 66%, 44%);
+}
+
+.mac {
+    background: hsl(233, 100%, 69%);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+/* TRACK SECTION */
+
+.track {
+    padding: 50px 20px 100px;
+}
+
+.track h2,
+.access h2,
+.workflow h2,
+.download h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.track>p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.computer-section {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 80px;
+    text-align: left;
+}
+
+.computer-image {
+    width: 55%;
+    margin-left: -30px;
+}
+
+.computer-image img {
+    width: 100%;
+    display: block;
+}
+
+.features {
+    max-width: 350px;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+
+/* ACCESS SECTION */
+
+.access {
+    padding: 50px 20px 100px;
+}
+
+.access>p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.access img {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 80px auto 0;
+}
+
+
+/* WORKFLOW SECTION */
+
+.workflow {
+    padding: 30px 20px 100px;
+}
+
+.workflow>p {
+    margin-bottom: 60px;
+}
+
+.workflow-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.workflow-card {
+    flex: 1;
+    max-width: 350px;
+}
+
+.workflow-card img {
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.workflow-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* CLIENT LOGOS */
+
+.clients {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px 50px 120px;
+}
+
+.clients img {
+    max-width: 150px;
+    height: auto;
+}
+
+
+/* DOWNLOAD SECTION */
+
+.download {
+    padding: 20px 20px 120px;
+}
+
+.download>p {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: hsl(220, 18%, 97%);
+    padding: 45px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer>img {
+    width: 55px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    gap: 20px;
+    text-align: left;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+.footer-links a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials img {
+    width: 22px;
+    cursor: pointer;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .header {
+        background-image: url("images/bg-header-mobile.png");
+        padding: 120px 25px 80px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .track {
+        padding: 30px 25px 80px;
+    }
+
+    .track h2,
+    .access h2,
+    .workflow h2,
+    .download h2 {
+        font-size: 27px;
+    }
+
+    .computer-section {
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .computer-image {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .features {
+        max-width: 100%;
+    }
+
+    .feature {
+        margin-bottom: 40px;
+    }
+
+    .access {
+        padding: 30px 25px 80px;
+    }
+
+    .access img {
+        margin-top: 60px;
+    }
+
+    .workflow-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 55px;
+    }
+
+    .workflow-card {
+        max-width: 100%;
+    }
+
+    .clients {
+        flex-direction: column;
+        gap: 60px;
+        padding-bottom: 100px;
+    }
+
+    .download {
+        padding: 20px 25px 100px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+}
